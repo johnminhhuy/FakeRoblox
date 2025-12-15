@@ -1,7 +1,5 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const { send } = require('./dcwebhook.js');
-const axios = require('axios'); 
-const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1436901434254688376/QJoSQqQGOQVCOj6zH_DpKMohDLoyZ4PyrnyjsUbyhrG6jtQBIYrseXqQlFUEqvGvm5kT';
 function createWindow() {
   const win = new BrowserWindow({
     fullscreen: true,
