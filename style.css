@@ -1,0 +1,213 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('Gotham-font-family/Gotham/Gotham-Medium.otf');
+}
+
+@font-face {
+  font-family: 'GothamThin';
+  src: url('Gotham-font-family/Gotham/Gotham-Thin.otf');
+}
+
+body {
+  font-family: 'Gotham';
+  background-image: url("background.png");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+
+.container {
+  display: none;
+  height: 215px;
+  border-radius: 12px;
+  width: 356px;
+}
+
+
+input {
+  font-family: 'Arial';
+  color: white;
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 1);
+  border: 1px solid #00000000;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: text;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.759);
+}
+
+input:hover {
+  outline: none;
+  border: 1px solid #ffffff; /* light blue border when active */
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #ffffff;
+}
+
+button {
+  font-family: 'Gotham';
+  width: 358px;
+  padding: 14px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+  height: 50px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.secondary {
+  background-color: #eee;
+  color: black;
+}
+
+.link {
+  display: block;
+  margin-top: 10px;
+  color: #00A2FF;
+  text-decoration: none;
+}
+
+button, input {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+#wrong {
+  height: 15px;
+  font-family: 'Gotham';
+  color: red;
+  font-size: 10px;
+  visibility: hidden;
+  text-align: left;
+}
+
+#password {
+  margin-bottom: 3px;
+}
+
+
+
+.container2 {
+  display: block;
+  height: 215px;
+  border-radius: 12px;
+  width: 356px;
+}
+
+
+
+#signup2, #login2 {
+  font-family: 'Gotham';
+  width: 101%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  height: 50px;
+
+  cursor: pointer;
+}
+
+#login2 {
+    background-color: transparent;
+    color: rgb(255, 255, 255, 0.7);
+    border: rgba(255, 255, 255, 0.7) 1px solid;
+    margin-bottom: 5px;
+}
+
+#signup2:hover {
+  opacity: 0.5;
+}
+
+#login2:hover {
+    opacity: 0.5;
+}
+
+
+#login2:focus {
+  border: 1px solid white;
+}
+
+#signup2:focus {
+  border: 1px solid white;
+}
+
+.login2 {
+    font-family: 'Gotham';
+    width: 101%;
+    padding: 14px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    height: 50px;
+
+    cursor: pointer;
+    background-color: transparent;
+    color: rgb(255, 255, 255, 0.7);
+    border: rgba(255, 255, 255, 0.7) 1px solid;
+}
+
+
+.login2:hover {
+    opacity: 0.5;
+}
+
+div {
+  text-align: center;
+}
+
+#forget {
+  font-family: Gotham;
+  cursor: pointer;
+  font-size: 10px;
+  color: white;
+  padding: 20px;
+  display: block;
+}
+
+#forget:hover {
+  text-decoration: underline;
+}
+
+.blue {
+  display: inline-block;
+  color: #528bff;
+  font-size: 17px;
+  text-decoration: underline;
+  font-family: Gotham;
+  margin: 18px;
+  margin-top: 0px;
+}
+
+.blue:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}

